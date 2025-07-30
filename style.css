@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to top right, #0e0e0e, #1b1b1b);
+  color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ffb347;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #ffb34788;
+}
+
+.instruction {
+  font-size: 1.2em;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.candles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.candle {
+  width: 30px;
+  height: 100px;
+  background: #ffb347;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 15px #ffb34799;
+}
+
+.flame {
+  width: 14px;
+  height: 25px;
+  background: radial-gradient(ellipse at center, #ffdd57 0%, #ff7300 80%);
+  border-radius: 50%;
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flicker 1s infinite;
+  box-shadow: 0 0 25px #ffaa00;
+  cursor: pointer;
+}
+
+@keyframes flicker {
+  0% { transform: translateX(-50%) scale(1); opacity: 1; }
+  50% { transform: translateX(-50%) scale(1.2); opacity: 0.8; }
+  100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+
+.cake {
+  font-size: 80px;
+  transition: transform 1s ease;
+  color: #fff;
+  text-shadow: 0 0 20px #ffb34788;
+}
+
+.reveal-layout .cake {
+  transform: translateX(-80px);
+}
+
+#finalMessage {
+  font-size: 1.8em;
+  color: #ffcc80;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+  text-shadow: 0 0 8px #ffb34788;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  margin-top: 30px;
+  font-size: 1.1em;
+  color: #ddd;
+  line-height: 1.6;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ffb34733;
+}
+
+#typedName {
+  font-size: 1.3em;
+  color: #ffb347;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffb347;
+  animation: blink 0.8s infinite;
+  display: inline-block;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: #ffb347; }
+  50% { border-color: transparent; }
+}
+
+#giftBox button {
+  margin-top: 30px;
+  font-size: 1.1em;
+  background-color: #ffb347;
+  color: #1b1b1b;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s;
+  box-shadow: 0 0 15px #ffb347aa;
+}
+
+#giftBox button:hover {
+  background-color: #ffa726;
+  box-shadow: 0 0 25px #ffb347;
+}
+
+#finalSurprise {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+#finalSurprise a {
+  color: #9fa8da;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#finalSurprise a:hover {
+  text-decoration: underline;
+  color: #c5cae9;
+}

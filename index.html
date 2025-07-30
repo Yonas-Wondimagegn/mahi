@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>👀</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthdayyyy</h1>
+    <p class="instruction">እባክዎትን ሻማውን በመጫን ያጥፉልን 😁</p>
+
+    <div class="candles">
+      <div class="candle"><div class="flame" onclick="blowOut(this)"></div></div>
+      <div class="candle"><div class="flame" onclick="blowOut(this)"></div></div>
+      <div class="candle"><div class="flame" onclick="blowOut(this)"></div></div>
+    </div>
+
+    <div class="cake">🎂</div>
+
+    <div id="finalMessage" class="hidden">
+      <h2>Wish የማድረጊያ ጊዜ...</h2>
+    </div>
+
+    <p id="loveLetter" class="hidden">
+      <span id="typedName"></span><br><br>
+      Heyyyy HAPPY BIRTHDAY GIRL... <br><br>
+      It's been great days — especially the nights we spent together. I don’t even have the words to describe how much I truly enjoy our time...<br><br>
+      You feel like the missing piece of a puzzle that fills life with joy. And on this special day of yours, I just want to be the first to say:<br><br>
+      <strong>Have a truly amazing birthday 🎂🎉 — you deserve all the happiness in the world!</strong>
+    </p>
+
+    <div id="giftBox" class="hidden">
+      <button onclick="showGift()">🎁 Tap and scroll for a surprise👀</button>
+    </div>
+
+    <div id="finalSurprise" class="hidden">
+      <p>Hope this little surprise made your night 🙃 </p>
+      <a href="https://www.youtube.com/watch?v=1RIsA7MjEMk&list=RD1RIsA7MjEMk&start_radio=1" target="_blank">🎵 Play song👀</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
